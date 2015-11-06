@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 //use static assets like javascripts, stylesheets, and images...
 app.use(express.static("public"));
 
+app.use(express.static("bower_components"));
+
 var sandwiches = [
     "Grilled Cheese",
     "Fried Chicken",
@@ -29,6 +31,11 @@ app.get("/", function (req, res){
 app.get("/sandwiches", function (req, res){
   var sandwichesText = sandwiches.join(", ");
   res.send(sandwichesText);
+});
+
+
+app.get("/sandwich/:name", function (req, res) {
+    res.send("Your sandwich is: " + req.params.name);
 });
 
 app.post("/sandwiches", function (req, res){
