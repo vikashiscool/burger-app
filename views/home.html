@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New sandwich</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/app.css">  <!-- because you have app.use(express.static("public")); in your index.js -->
+</head>
+<body>
+  <form action="/sandwiches" method="POST">
+    <input type="text" name="sandwich[name]" placeholder="What's your sammich?">
+    <button>Send Request</button>
+  </form>
+</body>
+</html>

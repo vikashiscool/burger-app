@@ -1,0 +1,23 @@
+{
+  "name": "burger-app",
+  "version": "1.0.0",
+  "description": "Intro to Express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikashiscool/burger-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vikashiscool/burger-app/issues"
+  },
+  "homepage": "https://github.com/vikashiscool/burger-app",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3"
+  }
+}
